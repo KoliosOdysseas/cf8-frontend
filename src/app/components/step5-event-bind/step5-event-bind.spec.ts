@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Step4ForDirective } from './step4-for-directive';
+import { Step5EventBind } from './step5-event-bind';
 
-describe('Step4ForDirective', () => {
-  let component: Step4ForDirective;
-  let fixture: ComponentFixture<Step4ForDirective>;
+describe('Step5EventBind', () => {
+  let component: Step5EventBind;
+  let fixture: ComponentFixture<Step5EventBind>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Step4ForDirective]
+      imports: [Step5EventBind]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Step4ForDirective);
+    fixture = TestBed.createComponent(Step5EventBind);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -20,4 +20,4 @@ describe('Step4ForDirective', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-})
+});
