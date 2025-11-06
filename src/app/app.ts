@@ -28,6 +28,8 @@ import { Person } from './shared/interfaces/person';
 export class App {
   name = "Angular";
 
+  doNotShowRest:boolean=true;
+
   //step 3 input component 
   person1: Person = {
     firstName: 'User1 name',
