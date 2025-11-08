@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
 import { Person } from '../../shared/interfaces/person';
-import { Step3PersonTableInput } from '../step3-person-table-input/step3-person-table-input';
+import { Step6SimpleDatatable } from '../step6-simple-datatable/step6-simple-datatable';
 
 @Component({
-  selector: 'app-step4-for-directive',
-  imports: [Step3PersonTableInput],
-  templateUrl: './step4-for-directive.html',
-  styleUrl: './step4-for-directive.css',
+  selector: 'app-step7-component-output',
+  imports: [Step6SimpleDatatable],
+  templateUrl: './step7-component-output.html',
+  styleUrl: './step7-component-output.css',
 })
-export class Step4ForDirective {
-
-  person: Person[] = [
+export class Step7ComponentOutput {
+  persons: Person[] = [
     {"firstname":"Ryon","lastname":"McRinn","email":"rmcrinn0@infoseek.co.jp"},
     {"firstname":"Nestor","lastname":"Seeman","email":"nseeman1@bbc.co.uk"},
     {"firstname":"Loise","lastname":"Bassick","email":"lbassick2@addtoany.com"},
@@ -33,4 +32,7 @@ export class Step4ForDirective {
     {"firstname":"Fedora","lastname":"Stork","email":"fstorkj@shutterfly.com"}
   ]
 
+  showPersonClicked(data:Person){
+    console.log("Step 7", data);
+  }
 }

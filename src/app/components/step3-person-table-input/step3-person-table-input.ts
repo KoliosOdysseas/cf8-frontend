@@ -10,8 +10,8 @@ import { Person } from '../../shared/interfaces/person';
 export class Step3PersonTableInput {
   @Input() person: Person | undefined;
   user = {
-    firstName: 'Luca',
-    lastName: 'Jovic',
+    firstname: 'Luca',
+    lastname: 'Jovic',
     email: 'luca.jovic@example.com'
   }
 }

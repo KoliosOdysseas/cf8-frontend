@@ -1,44 +1,44 @@
 import { Component } from '@angular/core';
-// import { RouterOutlet } from '@angular/router';
 import { Step2PersonTable } from './components/step2-person-table/step2-person-table';
 import { Step3PersonTableInput } from './components/step3-person-table-input/step3-person-table-input';
 import { Step4ForDirective } from './components/step4-for-directive/step4-for-directive';
 import { Step5EventBind } from './components/step5-event-bind/step5-event-bind';
-import { RouterLink, RouterOutlet } from '@angular/router';
+
 import { Navbar } from './components/navbar/navbar';
 import { ListGroupMenu } from './components/list-group-menu/list-group-menu';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { Person } from './shared/interfaces/person';
-
 
 @Component({
   selector: 'app-root',
   imports: [
     RouterLink,
     RouterOutlet,
+    Navbar,
+    ListGroupMenu,
     Step2PersonTable, 
     Step3PersonTableInput, 
     Step4ForDirective, 
-    Step5EventBind,
-    Navbar,
-    ListGroupMenu
+    Step5EventBind
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  name = "Angular";
+  name = "Markos";
 
-  doNotShowRest:boolean=true;
+  doNotShowRest:boolean = true;
 
-  //step 3 input component 
-  person1: Person = {
-    firstName: 'User1 name',
-    lastName: 'User1 surename',
-    email: 'user1@example.com'
-}
-person2: Person = {
-    firstName: 'User2 name',
-    lastName: 'User2 surename',
-    email: 'user2@example.com'
-}
+  // Step 3 input component
+  person1:Person = {
+    firstname: 'User1 name',
+    lastname: ' User1 surname',
+    email: 'user1@aueb.gr'
+  }
+
+  person2: Person = {
+    firstname: "User2 name",
+    lastname: "User2 surname",
+    email: "user2@aueb.gr"
+  }
 }

@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
+import { Step6SimpleDatatable } from '../step6-simple-datatable/step6-simple-datatable';
 import { Person } from '../../shared/interfaces/person';
-import { Step3PersonTableInput } from '../step3-person-table-input/step3-person-table-input';
 
 @Component({
-  selector: 'app-step4-for-directive',
-  imports: [Step3PersonTableInput],
-  templateUrl: './step4-for-directive.html',
-  styleUrl: './step4-for-directive.css',
+  selector: 'app-step6-simple-datatable-show',
+  imports: [Step6SimpleDatatable],
+  templateUrl: './step6-simple-datatable-show.html',
+  styleUrl: './step6-simple-datatable-show.css',
 })
-export class Step4ForDirective {
-
-  person: Person[] = [
+export class Step6SimpleDatatableShow {
+  persons: Person[] = [
     {"firstname":"Ryon","lastname":"McRinn","email":"rmcrinn0@infoseek.co.jp"},
     {"firstname":"Nestor","lastname":"Seeman","email":"nseeman1@bbc.co.uk"},
     {"firstname":"Loise","lastname":"Bassick","email":"lbassick2@addtoany.com"},
@@ -32,5 +31,4 @@ export class Step4ForDirective {
     {"firstname":"Gertie","lastname":"Dannett","email":"gdannetti@hubpages.com"},
     {"firstname":"Fedora","lastname":"Stork","email":"fstorkj@shutterfly.com"}
   ]
-
 }
